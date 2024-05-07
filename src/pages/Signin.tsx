@@ -2,6 +2,9 @@ import React from 'react';
 
 import { Link, useNavigate } from 'react-router-dom';
 
+import Input from '../components/Form/Input';
+import Button from '../components/Form/Button';
+
 const Signin = (): React.JSX.Element => {
   const navigate = useNavigate();
 
@@ -25,14 +28,13 @@ const Signin = (): React.JSX.Element => {
                 Email
               </label>
             </div>
-            <input
+            <Input
               required
               autoFocus
               tabIndex={1}
-              type='email'
               name='email'
-              id='email'
-              autoComplete='off'
+              type='email'
+              autoComplete={false}
               placeholder='Please enter your email'
             />
           </div>
@@ -45,20 +47,17 @@ const Signin = (): React.JSX.Element => {
                 Forgot password?
               </Link>
             </div>
-            <input
+            <Input
               required
               tabIndex={2}
-              type='password'
               name='password'
-              id='password'
-              autoComplete='off'
+              type='password'
+              autoComplete={false}
               placeholder='Please enter your password'
             />
           </div>
           <div className='form-line'>
-            <button tabIndex={3} type='submit'>
-              Sign in
-            </button>
+            <Button type='submit' text='Sign in' tabIndex={3} />
           </div>
         </form>
 

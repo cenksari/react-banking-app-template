@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +40,10 @@ body, html, input, select, textarea, button {
   flex-direction: column;
 }
 
+.flex-end {
+  justify-content: flex-end;
+}
+
 .flex-h-center {
   justify-content: center;
 }
@@ -47,6 +54,76 @@ body, html, input, select, textarea, button {
 
 .flex-space-between {
   justify-content: space-between;
+}
+
+.no-select {
+  user-select: none;
+  --webkit-user-select: none;
+}
+
+header {
+  margin: 0 auto 0 auto;
+}
+
+header .header-profile {
+  flex: 1;
+}
+
+header .profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50em;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .header-center {
+  flex-grow: 1;
+  padding: 0 15px;
+}
+
+header .header-search {
+  width: 100%;
+  padding: 0 15px;
+  border-radius: 50em;
+  background-color: rgba(255,255,255,0.2);
+}
+
+header .header-search input {
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+header .header-search input::placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+
+header .header-buttons {
+  flex: 1;
+}
+
+header button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50em;
+  background-color: rgba(255,255,255,0.2);
+}
+
+header button:active {
+  background-color: rgba(255,255,255,0.4);
+}
+
+header button:first-child {
+  margin-right: 15px;
+}
+
+header button span {
+  line-height: 0;
+  color: #ffffff;
 }
 
 .bg {
@@ -164,6 +241,131 @@ a:hover {
   text-align: center;
 }
 
+.balance {
+  margin: 100px 0;
+}
+
+.balance h1 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.balance h1 span {
+  font-weight: 500;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+.balance .currency {
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px 20px;
+  align-self: center;
+  margin-bottom: 10px;
+  border-radius: 50em;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.actions .circle {
+  min-width: 120px;
+}
+
+.actions button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 50em;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.actions button span {
+  font-size: 1.7em;
+  color: #ffffff;
+}
+
+.history {
+  padding: 10px;
+  margin: 50px auto;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.history .history-line {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.history .history-line:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.history .history-line-icon {
+  flex: 1;
+  min-width: 70px;
+}
+
+.history .history-line-details {
+  flex-grow: 1;
+  min-width: 300px;
+}
+
+.history .history-line-details .name {
+  font-size: 1em;
+}
+
+.history .history-line-details .time {
+  font-size: 1em;
+  color: #999999;
+}
+
+.history .history-line-amount {
+  flex: 2;
+  font-size: 0.9em;
+  text-wrap: nowrap;
+}
+
+.history .history-line.bottom a {
+  color: #0a56ea;
+}
+
+.circle-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50em;
+  background-color: #000000;
+}
+
+.circle-icon.red {
+  background-color: #f42d53;
+}
+
+.circle-icon.blue {
+  background-color: #0a56ea;
+}
+
+.circle-icon.gray {
+  background-color: #3e4649;
+}
+
+.circle-icon.purple {
+  background-color: #8852f6;
+}
+
+.circle-icon.yellow {
+  background-color: #ffca0c;
+}
+
+.circle-icon.green {
+  background-color: #4ed34e;
+}
+
+.circle-icon.orange {
+  background-color: #ff571d;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -184,5 +386,19 @@ a:hover {
   100% {
     opacity: 1;
     margin-top: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .actions .circle {
+    min-width: 95px;
+  }
+
+  .actions span {
+    font-size: 0.8em;
+  }
+
+  .history .history-line-details {
+    min-width: unset;
   }
 }

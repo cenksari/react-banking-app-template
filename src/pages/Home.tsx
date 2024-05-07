@@ -1,20 +1,21 @@
 import React from 'react';
 
+import Header from '../components/Header/Header';
+import Balance from '../components/Balance/Balance';
+import Actions from '../components/Actions/Actions';
+import History from '../components/History/History';
+import Widgets from '../components/Widgets/Widgets';
+
 const Home = (): React.JSX.Element => {
   return (
     <>
       <div className='bg'></div>
       <div className='content flex flex-col'>
-        <div>
-          <p>deneme</p>
-        </div>
-        <div className='center'>
-          <p className='text-shadow'>Main - EURO</p>
-          <h1 className='text-shadow'>€1325,23</h1>
-        </div>
-        <div>
-          <p>History</p>
-        </div>
+        <Header />
+        <Balance balance={1325.5} currency='EURO' currencySymbol='€' />
+        <Actions />
+        <History />
+        <Widgets />
       </div>
     </>
   );
