@@ -3,9 +3,6 @@ You are free to download, change and use it anywhere. I will regularly update th
 
 If you like this resource, please follow me on GitHub. Thank you!
 
-## Demo
-[https://cenksari.github.io/react-crypto-exchange/](https://cenksari.github.io/react-crypto-exchange/)
-
 ## Screenshots
 ![Signin](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/signin.png)
 
