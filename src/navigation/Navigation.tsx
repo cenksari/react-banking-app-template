@@ -3,6 +3,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from '../pages/Home';
+import Cards from '../pages/Cards';
 import Signin from '../pages/Signin';
 import Transactions from '../pages/Transactions';
 
@@ -11,6 +12,7 @@ const Navigation = (): React.JSX.Element => {
     <Routes>
       <Route path='/' element={<Signin />} />
       <Route path='/home' element={<Home />} />
+      <Route path='/cards' element={<Cards />} />
       <Route path='/transactions' element={<Transactions />} />
     </Routes>
   );

@@ -434,6 +434,105 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.cards {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  color: #fff;
+  cursor: pointer;
+  perspective: 1000px;
+  font-family: monospace;
+}
+
+.card .card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card .front,
+.card .back {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  padding: 20px 30px;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  background-image: linear-gradient(45deg, #000000, #555555);
+}
+
+.card .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .card-no {
+  font-size: 1.2em;
+  margin-top: 55px;
+}
+
+.card .card-holder {
+  font-size: 0.7em;
+  margin-top: 40px;
+}
+
+.card .name {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.card .bar {
+  height: 60px;
+  margin-top: 10px;
+  margin-left: -30px;
+  margin-right: -30px;
+  background: #222222;
+}
+
+.card .signature-back {
+  height: 45px;
+  background-color: #ffffff;
+}
+
+.card .card-cvv {
+  margin-top: 20px;
+}
+
+.card .card-cvv div {
+  flex: 1;
+}
+
+.card .card-cvv p {
+  font-size: 1em;
+  color: #000000;
+  padding: 10px 20px;
+  background: #ffffff;
+}
+
+.card .card-text {
+  margin-top: 30px;
+  font-size: 0.7em;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-inner {
+  transform: rotateY(-180deg);
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -480,6 +579,32 @@ a:hover {
 
   .widgets {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    width: 360px;
+    height: 230px;
+  }
+
+  .card .front,
+  .card .back {
+    padding: 5px 20px;
+  }
+
+  .card .card-no {
+    margin-top: 20px;
+  }
+
+  .card .bar {
+    height: 40px;
+  }
+
+  .card .signature-back {
+    height: 30px;
+  }
+
+  .card .card-text {
+    margin-top: 20px;
   }
 }
 
