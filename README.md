@@ -8,6 +8,10 @@ If you like this resource, please follow me on GitHub. Thank you!
 
 ![Home](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/home.png)
 
+![Transactions](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/transactions.png)
+
+![Cards](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/cards.png)
+
 ## Authors
 @cenksari
 
