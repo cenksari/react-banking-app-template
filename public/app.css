@@ -44,6 +44,10 @@ body, html, input, select, textarea, button {
   justify-content: flex-end;
 }
 
+.flex-start {
+  justify-content: flex-start;
+}
+
 .flex-h-center {
   justify-content: center;
 }
@@ -59,6 +63,16 @@ body, html, input, select, textarea, button {
 .no-select {
   user-select: none;
   --webkit-user-select: none;
+}
+
+.divider {
+  height: 50px;
+}
+
+.title {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 1.5em;
 }
 
 header {
@@ -245,7 +259,7 @@ a:hover {
 }
 
 .balance {
-  margin: 100px 0;
+  margin: 70px 0;
 }
 
 .balance h1 {
@@ -295,9 +309,20 @@ a:hover {
 
 .history {
   padding: 10px;
-  margin: 50px auto;
+  margin: 0 auto;
+  min-width: 500px;
   border-radius: 20px;
   background-color: rgba(0,0,0,0.2);
+}
+
+.history-header {
+  padding: 10px;
+  margin: 0 auto;
+  min-width: 500px;
+}
+
+.history-header .date {
+  font-weight: 500;
 }
 
 .history .history-line {
@@ -313,12 +338,10 @@ a:hover {
 
 .history .history-line-icon {
   flex: 1;
-  min-width: 70px;
 }
 
 .history .history-line-details {
-  flex-grow: 1;
-  min-width: 300px;
+  flex: 3;
 }
 
 .history .history-line-details .name {
@@ -331,7 +354,7 @@ a:hover {
 }
 
 .history .history-line-amount {
-  flex: 2;
+  flex: 1;
   font-size: 0.9em;
   text-wrap: nowrap;
 }
@@ -378,7 +401,7 @@ a:hover {
 
 .widgets {
   display: grid;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -443,11 +466,25 @@ a:hover {
     font-size: 0.8em;
   }
 
+  .history {
+    min-width: 100%;
+  }
+
+  .history-header {
+    min-width: 100%;
+  }
+
   .history .history-line-details {
     min-width: unset;
   }
 
   .widgets {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  body, html, input, select, textarea, button {
+    font-size: 1em;
   }
 }
