@@ -99,6 +99,8 @@ header .header-search input {
 header .header-search input::placeholder {
   opacity: 1;
   color: #ffffff;
+  user-select: none;
+  --webkit-user-select: none;
 }
 
 header .header-buttons {
@@ -230,6 +232,7 @@ button:active {
 a {
   font-weight: 500;
   color: #f5f5f5;
+  transition: all 0.5s;
   text-decoration: none;
 }
 
@@ -270,6 +273,7 @@ a:hover {
   min-width: 120px;
 }
 
+.actions a,
 .actions button {
   width: 60px;
   height: 60px;
@@ -279,9 +283,14 @@ a:hover {
   background-color: rgba(255,255,255,0.2);
 }
 
+.actions a span,
 .actions button span {
   font-size: 1.7em;
   color: #ffffff;
+}
+
+.actions a:hover {
+  text-decoration: none;
 }
 
 .history {
@@ -327,8 +336,9 @@ a:hover {
   text-wrap: nowrap;
 }
 
-.history .history-line.bottom a {
-  color: #0a56ea;
+.history .history-line.bottom:hover {
+  opacity: 0.7;
+  text-decoration: none;
 }
 
 .circle-icon {
@@ -366,6 +376,41 @@ a:hover {
   background-color: #ff571d;
 }
 
+.widgets {
+  display: grid;
+  margin: 0 auto 50px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.widgets .widget {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  max-width: 500px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.widgets .widget:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.widgets .widget:active {
+  opacity: 0.7;
+}
+
+.widgets .widget p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.widgets .widget span {
+  font-size: 2.5em;
+  display: block;
+  margin-bottom: 10px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -400,5 +445,9 @@ a:hover {
 
   .history .history-line-details {
     min-width: unset;
+  }
+
+  .widgets {
+    grid-template-columns: 1fr 1fr;
   }
 }

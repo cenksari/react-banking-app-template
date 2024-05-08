@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Header = (): React.JSX.Element => {
+  const inputRef = React.useRef<HTMLInputElement>(null);
+
   return (
     <header className='flex flex-v-center flex-space-between'>
       <div className='header-profile'>
@@ -8,8 +10,15 @@ const Header = (): React.JSX.Element => {
       </div>
       <div className='header-center'>
         <div className='header-search flex flex-v-center'>
-          <span className='material-symbols-outlined no-select'>search</span>
-          <input type='text' name='search' id='search' placeholder='Search' />
+          <span
+            className='material-symbols-outlined no-select'
+            onClick={() => {
+              inputRef.current?.focus();
+            }}
+          >
+            search
+          </span>
+          <input ref={inputRef} type='text' name='search' id='search' placeholder='Search' />
         </div>
       </div>
       <div className='header-buttons flex flex-v-center flex-end'>

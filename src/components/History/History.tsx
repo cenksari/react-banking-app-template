@@ -84,9 +84,10 @@ const History = (): React.JSX.Element => {
           currencySymbol: '€',
         }}
       />
-      <div className='history-line bottom flex flex-h-center flex-v-center'>
-        <Link to='/'>See all</Link>
-      </div>
+      <Link to='/home' className='history-line bottom flex flex-v-center flex-h-center'>
+        See all
+        <span className='material-symbols-outlined'>keyboard_arrow_right</span>
+      </Link>
     </div>
   );
 };
