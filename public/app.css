@@ -24,8 +24,59 @@ body, html, input, select, textarea, button {
   font-family: "Poppins", sans-serif;
 }
 
+h1 {
+  font-size: 2.4em;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+label {
+  font-weight: 500;
+  user-select: none;
+}
+
+input, button {
+  border: none;
+  color: #000000;
+  appearance: none;
+  transition: all 0.5s;
+  --webkit-appearance: none;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+a {
+  font-weight: 500;
+  color: #f5f5f5;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .center {
   text-align: center;
+}
+
+.right {
+  text-align: right;
 }
 
 .h-full {
@@ -34,6 +85,10 @@ body, html, input, select, textarea, button {
 
 .flex {
   display: flex;
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 .flex-col {
@@ -66,21 +121,22 @@ body, html, input, select, textarea, button {
 }
 
 .divider {
-  height: 50px;
+  height: 40px;
 }
 
 .title {
-  margin: 0 auto;
   font-weight: 500;
   font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-header {
-  margin: 0 auto 0 auto;
+.text-shadow {
+  text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 
-header .header-profile {
-  flex: 1;
+.pointer {
+  cursor: pointer;
 }
 
 header .profile-photo {
@@ -94,20 +150,19 @@ header .profile-photo {
 
 header .header-center {
   flex-grow: 1;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 header .header-search {
-  width: 100%;
-  padding: 0 15px;
+  padding: 0 10px;
   border-radius: 50em;
   background-color: rgba(255,255,255,0.2);
 }
 
 header .header-search input {
-  border: none;
+  width: 100%;
   color: #ffffff;
-  background-color: transparent;
+  padding: 10px 0 10px 5px;
 }
 
 header .header-search input::placeholder {
@@ -117,27 +172,26 @@ header .header-search input::placeholder {
   --webkit-user-select: none;
 }
 
-header .header-buttons {
-  flex: 1;
-}
-
-header button {
+header .header-button {
   width: 50px;
   height: 50px;
-  border: none;
   border-radius: 50em;
   background-color: rgba(255,255,255,0.2);
 }
 
-header button:active {
+header .header-button:hover {
+  text-decoration: none;
+}
+
+header .header-button:active {
   background-color: rgba(255,255,255,0.4);
 }
 
-header button:first-child {
-  margin-right: 15px;
+header .header-button:first-child {
+  margin-right: 10px;
 }
 
-header button span {
+header .header-button span {
   line-height: 0;
   color: #ffffff;
 }
@@ -175,17 +229,9 @@ header button span {
   position: absolute;
 }
 
-.text-shadow {
-  text-shadow: 1px 1px rgba(0,0,0,0.5);
-}
-
-h1 {
-  font-size: 2.4em;
-  margin-bottom: 5px;
-}
-
-p {
-  font-size: 1.2em;
+.container {
+  margin: 0 auto;
+  max-width: 550px;
 }
 
 .form {
@@ -204,54 +250,25 @@ p {
   margin-bottom: 10px;
 }
 
-label {
-  font-weight: 500;
-  user-select: none;
-}
-
-input, button {
+.input {
   width: 100%;
-  border: none;
   padding: 10px;
   border-radius: 5px;
-  transition: all 0.5s;
-}
-
-input {
-  color: #000000;
+  background-color: #ffffff;
   border: 2px solid #f5f5f5;
 }
 
-input:focus {
+.input:focus {
   border: 2px solid #190537;
 }
 
-button {
-  cursor: pointer;
-  color: #000000;
+.button {
+  width: 100%;
+  padding: 10px;
   font-weight: 500;
-  user-select: none;
+  border-radius: 5px;
   background-color: #ff8057;
   border: 2px solid #ff8057;
-}
-
-button:hover {
-  opacity: 0.9;
-}
-
-button:active {
-  opacity: 0.8;
-}
-
-a {
-  font-weight: 500;
-  color: #f5f5f5;
-  transition: all 0.5s;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .links {
@@ -284,14 +301,17 @@ a:hover {
 }
 
 .actions .circle {
-  min-width: 120px;
+  min-width: 110px;
+}
+
+.actions .circle .text-shadow {
+  font-size: 0.9em;
 }
 
 .actions a,
 .actions button {
   width: 60px;
   height: 60px;
-  border: none;
   margin-bottom: 15px;
   border-radius: 50em;
   background-color: rgba(255,255,255,0.2);
@@ -304,31 +324,28 @@ a:hover {
 }
 
 .actions a:hover {
+  opacity: 0.9;
   text-decoration: none;
 }
 
-.history {
-  padding: 10px;
-  margin: 0 auto;
-  min-width: 500px;
-  border-radius: 20px;
-  background-color: rgba(0,0,0,0.2);
-}
-
 .history-header {
-  padding: 10px;
-  margin: 0 auto;
-  min-width: 500px;
+  padding: 0 10px 10px 10px;
 }
 
 .history-header .date {
   font-weight: 500;
 }
 
+.history {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.2);
+}
+
 .history .history-line {
   padding: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .history .history-line:last-child {
@@ -336,12 +353,9 @@ a:hover {
   border-bottom: none;
 }
 
-.history .history-line-icon {
-  flex: 1;
-}
-
 .history .history-line-details {
-  flex: 3;
+  flex: 4;
+  padding: 0 20px;
 }
 
 .history .history-line-details .name {
@@ -354,8 +368,7 @@ a:hover {
 }
 
 .history .history-line-amount {
-  flex: 1;
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-wrap: nowrap;
 }
 
@@ -399,17 +412,9 @@ a:hover {
   background-color: #ff571d;
 }
 
-.widgets {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 .widgets .widget {
-  margin: 10px;
-  width: 150px;
-  height: 150px;
-  max-width: 500px;
+  width: 130px;
+  height: 130px;
   border-radius: 20px;
   background-color: rgba(255,255,255,0.2);
 }
@@ -424,23 +429,17 @@ a:hover {
 }
 
 .widgets .widget p {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 300;
 }
 
 .widgets .widget span {
-  font-size: 2.5em;
-  display: block;
+  font-size: 2.3em;
   margin-bottom: 10px;
 }
 
-.cards {
-  margin: 0 auto;
-  max-width: 500px;
-}
-
 .card {
-  width: 500px;
+  width: 470px;
   height: 300px;
   color: #fff;
   cursor: pointer;
@@ -533,6 +532,65 @@ a:hover {
   transform: rotateY(-180deg);
 }
 
+.card-balance {
+  margin-top: 20px;
+}
+
+.accounts {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.accounts .account-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50em;
+  background-color: #190537;
+}
+
+.accounts .account-circle svg {
+  width: 40px;
+  height: 40px;
+}
+
+.accounts .account-details {
+  flex: 4;
+  padding: 0 20px;
+}
+
+.accounts .account-details .account-bank {
+  font-weight: 500;
+}
+
+.accounts .account-details .account-card {
+  color: #888888;
+}
+
+.accounts .account-buttons button {
+  padding: 5px;
+  font-size: 0.8em;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.accounts .account-balance-bottom {
+  color: #999999;
+  font-size: 0.9em;
+}
+
+.accounts .account-balance-input {
+  width: 60px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.transfer-circle {
+  padding: 5px;
+  border-radius: 50em;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -557,33 +615,23 @@ a:hover {
 }
 
 @media (max-width: 550px) {
+  body, html, input, select, textarea, button {
+    font-size: 1em;
+  }
+
   .actions .circle {
     min-width: 95px;
   }
 
-  .actions span {
-    font-size: 0.8em;
-  }
-
-  .history {
-    min-width: 100%;
-  }
-
-  .history-header {
-    min-width: 100%;
-  }
-
-  .history .history-line-details {
-    min-width: unset;
-  }
-
-  .widgets {
-    grid-template-columns: 1fr 1fr;
+  .widgets .widget {
+    width: 110px;
+    height: 110px;
   }
 
   .card {
     width: 360px;
     height: 230px;
+    margin: 0 auto;
   }
 
   .card .front,
@@ -605,11 +653,5 @@ a:hover {
 
   .card .card-text {
     margin-top: 20px;
-  }
-}
-
-@media (max-width: 450px) {
-  body, html, input, select, textarea, button {
-    font-size: 1em;
   }
 }

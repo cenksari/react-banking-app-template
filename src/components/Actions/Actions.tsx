@@ -6,7 +6,7 @@ const Actions = (): React.JSX.Element => {
   return (
     <div className='actions flex flex-v-center flex-h-center'>
       <div className='circle no-select flex flex-col flex-v-center flex-h-center'>
-        <Link to='/home' className='flex flex-v-center flex-h-center'>
+        <Link to='/add' className='flex flex-v-center flex-h-center'>
           <span className='material-symbols-outlined'>add</span>
         </Link>
         <span className='text-shadow'>Add money</span>

@@ -35,6 +35,7 @@ const Input = ({
       placeholder={placeholder}
       autoComplete={autoComplete ? 'on' : 'off'}
       onChange={onChange}
+      className='input'
     />
   );
 };

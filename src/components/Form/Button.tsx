@@ -8,7 +8,7 @@ interface IProps {
 
 const Button = ({ type, text, tabIndex }: IProps): React.JSX.Element => {
   return (
-    <button tabIndex={tabIndex} type={type === 'submit' ? 'submit' : 'button'}>
+    <button tabIndex={tabIndex} type={type === 'submit' ? 'submit' : 'button'} className='button'>
       {text}
     </button>
   );
