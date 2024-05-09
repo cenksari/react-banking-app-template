@@ -14,6 +14,8 @@ If you like this resource, please follow me on GitHub. Thank you!
 
 ![Add](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/addmoney.png)
 
+![Profile](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/profile.png)
+
 ## Authors
 @cenksari
 

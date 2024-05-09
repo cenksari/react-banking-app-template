@@ -591,6 +591,56 @@ header .header-button span {
   border-radius: 50em;
 }
 
+.account {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.account a {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.account a:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.account a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.account a span {
+  margin-right: 15px;
+}
+
+.account a .notification {
+  width: 20px;
+  height: 20px;
+  font-weight: 500;
+  font-size: 0.7em;
+  border-radius: 50em;
+  background-color: red;
+}
+
+.account-photo {
+  width: 130px;
+  height: 130px;
+  margin: 20px auto;
+  border-radius: 50em;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer {
+  color: #999999;
+  font-size: 0.8em;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

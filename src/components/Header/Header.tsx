@@ -8,7 +8,9 @@ const Header = (): React.JSX.Element => {
   return (
     <header className='flex flex-v-center flex-space-between'>
       <div className='header-profile flex flex-1'>
-        <div className='profile-photo' style={{ backgroundImage: `url("images/profile.jpg")` }} />
+        <Link to='/profile'>
+          <div className='profile-photo' style={{ backgroundImage: `url("images/profile.jpg")` }} />
+        </Link>
       </div>
       <div className='header-center'>
         <div className='header-search flex flex-v-center'>
