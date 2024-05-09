@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 import Cards from '../pages/Cards';
 import Signin from '../pages/Signin';
 import Profile from '../pages/Profile';
+import Savings from '../pages/Savings';
 import Transactions from '../pages/Transactions';
 
 const Navigation = (): React.JSX.Element => {
@@ -17,6 +18,7 @@ const Navigation = (): React.JSX.Element => {
       <Route path='/home' element={<Home />} />
       <Route path='/cards' element={<Cards />} />
       <Route path='/profile' element={<Profile />} />
+      <Route path='/savings' element={<Savings />} />
       <Route path='/transactions' element={<Transactions />} />
     </Routes>
   );

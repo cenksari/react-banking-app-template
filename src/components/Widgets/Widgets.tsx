@@ -16,7 +16,7 @@ const Widgets = (): React.JSX.Element => {
         <span className='material-symbols-outlined'>credit_card</span>
         <p>Cards</p>
       </Link>
-      <Link to='/home' className='widget no-select flex flex-col flex-v-center flex-h-center'>
+      <Link to='/savings' className='widget no-select flex flex-col flex-v-center flex-h-center'>
         <span className='material-symbols-outlined'>savings</span>
         <p>Savings</p>
       </Link>
