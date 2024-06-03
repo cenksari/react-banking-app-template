@@ -16,7 +16,7 @@ const Signin = (): React.JSX.Element => {
 
   return (
     <div className='flex flex-v-center flex-h-center h-full'>
-      <div className='bg'></div>
+      <div className='bg' />
       <div className='text'>
         <h1 className='text-shadow'>Hello! 👋</h1>
         <p className='text-shadow'>Please sign in to your account or sign up a new account.</p>

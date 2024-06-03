@@ -7,16 +7,14 @@ interface IProps {
   disabled?: boolean;
 }
 
-const Button = ({ type, text, tabIndex, disabled = false }: IProps): React.JSX.Element => {
-  return (
-    <button
-      tabIndex={tabIndex}
-      type={type === 'submit' ? 'submit' : 'button'}
-      className={`button ${disabled ? 'disabled' : 'active'}`}
-    >
-      {text}
-    </button>
-  );
-};
+const Button = ({ type, text, tabIndex, disabled = false }: IProps): React.JSX.Element => (
+  <button
+    tabIndex={tabIndex}
+    type={type === 'submit' ? 'submit' : 'button'}
+    className={`button ${disabled ? 'disabled' : 'active'}`}
+  >
+    {text}
+  </button>
+);
 
 export default Button;

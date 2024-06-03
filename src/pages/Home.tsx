@@ -7,24 +7,22 @@ import History from '../components/History/History';
 import Widgets from '../components/Widgets/Widgets';
 import Divider from '../components/Divider/Divider';
 
-const Home = (): React.JSX.Element => {
-  return (
-    <Layout>
-      <Balance balance={1325.5} currency='EURO' currencySymbol='€' />
+const Home = (): React.JSX.Element => (
+  <Layout>
+    <Balance balance={1325.5} currency='EURO' currencySymbol='€' />
 
-      <Actions />
+    <Actions />
 
-      <Divider />
+    <Divider />
 
-      <History />
+    <History />
 
-      <Divider />
+    <Divider />
 
-      <Widgets />
+    <Widgets />
 
-      <Divider />
-    </Layout>
-  );
-};
+    <Divider />
+  </Layout>
+);
 
 export default Home;

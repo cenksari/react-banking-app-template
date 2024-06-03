@@ -7,28 +7,26 @@ import Layout from '../components/Layout/Layout';
 import Divider from '../components/Divider/Divider';
 import Destination from '../components/Add/Destination';
 
-const Add = (): React.JSX.Element => {
-  return (
-    <Layout>
-      <Divider />
+const Add = (): React.JSX.Element => (
+  <Layout>
+    <Divider />
 
-      <h1 className='title no-select'>Add money</h1>
+    <h1 className='title no-select'>Add money</h1>
 
-      <Saved />
+    <Saved />
 
-      <Arrow />
+    <Arrow />
 
-      <Destination />
+    <Destination />
 
-      <Divider />
+    <Divider />
 
-      <div className='add-buttons flex flex-space-between'>
-        <Button type='submit' text='Add money securely' tabIndex={2} />
-      </div>
+    <div className='add-buttons flex flex-space-between'>
+      <Button type='submit' text='Add money securely' tabIndex={2} />
+    </div>
 
-      <Divider />
-    </Layout>
-  );
-};
+    <Divider />
+  </Layout>
+);
 
 export default Add;

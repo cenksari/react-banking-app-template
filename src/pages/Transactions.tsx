@@ -4,22 +4,20 @@ import Layout from '../components/Layout/Layout';
 import History from '../components/History/History';
 import Divider from '../components/Divider/Divider';
 
-const Transactions = (): React.JSX.Element => {
-  return (
-    <Layout>
-      <Divider />
+const Transactions = (): React.JSX.Element => (
+  <Layout>
+    <Divider />
 
-      <h1 className='title no-select'>Transactions</h1>
+    <h1 className='title no-select'>Transactions</h1>
 
-      <History detailed date='May 6' dateBalance='-€127.78' />
+    <History detailed date='May 6' dateBalance='-€127.78' />
 
-      <Divider />
+    <Divider />
 
-      <History detailed date='May 5' dateBalance='-€970.23' />
+    <History detailed date='May 5' dateBalance='-€970.23' />
 
-      <Divider />
-    </Layout>
-  );
-};
+    <Divider />
+  </Layout>
+);
 
 export default Transactions;

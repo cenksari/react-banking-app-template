@@ -22,22 +22,20 @@ const Input = ({
   autoFocus = false,
   autoComplete = false,
   onChange,
-}: IProps): React.JSX.Element => {
-  return (
-    <input
-      id={name}
-      name={name}
-      type={type}
-      value={value}
-      tabIndex={tabIndex}
-      required={required}
-      autoFocus={autoFocus}
-      placeholder={placeholder}
-      autoComplete={autoComplete ? 'on' : 'off'}
-      onChange={onChange}
-      className='input'
-    />
-  );
-};
+}: IProps): React.JSX.Element => (
+  <input
+    id={name}
+    name={name}
+    type={type}
+    value={value}
+    tabIndex={tabIndex}
+    required={required}
+    autoFocus={autoFocus}
+    placeholder={placeholder}
+    autoComplete={autoComplete ? 'on' : 'off'}
+    onChange={onChange}
+    className='input'
+  />
+);
 
 export default Input;
