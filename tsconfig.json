@@ -27,7 +27,8 @@
     "**/*.cjs",
     "**/*.mjs",
     ".eslintrc.cjs",
-    ".prettierrc.cjs"
+    ".prettierrc.cjs",
+    ".eslint.config.mjs"
   ],
   "exclude": ["node_modules"]
 }
