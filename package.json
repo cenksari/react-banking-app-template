@@ -4,11 +4,16 @@
   "private": true,
   "dependencies": {
     "@eslint/js": "^9.4.0",
+    "@types/node": "^20.14.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-router-dom": "^5.3.3",
     "globals": "^15.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "typescript": "^5.4.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,10 +37,6 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^16.18.97",
-    "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.0",
-    "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^7.12.0",
     "@typescript-eslint/parser": "^7.12.0",
     "eslint": "8.57.0",
@@ -49,7 +50,6 @@
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
     "prettier": "^3.3.0",
-    "typescript": "^4",
     "typescript-eslint": "^7.12.0"
   }
 }
