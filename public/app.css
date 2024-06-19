@@ -8,20 +8,26 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-body, html, input, select, textarea, button {
+body,
+html,
+input,
+select,
+textarea,
+button {
   font-weight: 400;
   font-size: 1.05em;
   font-style: normal;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -38,7 +44,8 @@ label {
   user-select: none;
 }
 
-input, button {
+input,
+button {
   border: none;
   color: #000000;
   appearance: none;
@@ -137,7 +144,7 @@ a:hover {
 }
 
 .text-shadow {
-  text-shadow: 1px 1px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .pointer {
@@ -161,7 +168,7 @@ header .header-center {
 header .header-search {
   padding: 0 10px;
   border-radius: 50em;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 header .header-search input {
@@ -181,7 +188,7 @@ header .header-button {
   width: 50px;
   height: 50px;
   border-radius: 50em;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 header .header-button:hover {
@@ -189,7 +196,7 @@ header .header-button:hover {
 }
 
 header .header-button:active {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 header .header-button:first-child {
@@ -307,7 +314,7 @@ header .header-button span {
   align-self: center;
   margin-bottom: 10px;
   border-radius: 50em;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .actions .circle {
@@ -324,7 +331,7 @@ header .header-button span {
   height: 60px;
   margin-bottom: 15px;
   border-radius: 50em;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .actions a span,
@@ -349,13 +356,13 @@ header .header-button span {
 .history {
   padding: 10px;
   border-radius: 20px;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .history .history-line {
   padding: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .history .history-line:last-child {
@@ -426,7 +433,7 @@ header .header-button span {
   width: 130px;
   height: 130px;
   border-radius: 20px;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .widgets .widget:hover {
@@ -549,7 +556,7 @@ header .header-button span {
 .accounts {
   padding: 20px;
   border-radius: 20px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .accounts .account-circle {
@@ -582,7 +589,7 @@ header .header-button span {
   font-size: 0.8em;
   color: #ffffff;
   border-radius: 5px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .accounts .account-balance-bottom {
@@ -604,13 +611,13 @@ header .header-button span {
 .account {
   padding: 10px;
   border-radius: 20px;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .account a {
   padding: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .account a:last-child {
@@ -675,7 +682,12 @@ footer {
 }
 
 @media (max-width: 550px) {
-  body, html, input, select, textarea, button {
+  body,
+  html,
+  input,
+  select,
+  textarea,
+  button {
     font-size: 1em;
   }
 
