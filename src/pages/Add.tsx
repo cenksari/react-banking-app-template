@@ -22,7 +22,7 @@ const Add = (): React.JSX.Element => (
     <Divider />
 
     <div className='add-buttons flex flex-space-between'>
-      <Button type='submit' text='Add money securely' tabIndex={2} />
+      <Button type='submit' text='Add money securely' tabIndex={0} />
     </div>
 
     <Divider />

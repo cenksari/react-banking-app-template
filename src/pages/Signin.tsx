@@ -30,8 +30,7 @@ const Signin = (): React.JSX.Element => {
             </div>
             <Input
               required
-              autoFocus
-              tabIndex={1}
+              tabIndex={0}
               name='email'
               type='email'
               autoComplete={false}
@@ -49,7 +48,7 @@ const Signin = (): React.JSX.Element => {
             </div>
             <Input
               required
-              tabIndex={2}
+              tabIndex={0}
               name='password'
               type='password'
               autoComplete={false}
@@ -57,7 +56,7 @@ const Signin = (): React.JSX.Element => {
             />
           </div>
           <div className='form-line'>
-            <Button type='submit' text='Sign in' tabIndex={3} />
+            <Button type='submit' text='Sign in' tabIndex={0} />
           </div>
         </form>
 

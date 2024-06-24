@@ -13,8 +13,7 @@ const Destination = (): React.JSX.Element => (
       <div className='flex flex-v-center flex-end'>
         <span>€</span>
         <input
-          autoFocus
-          tabIndex={1}
+          tabIndex={0}
           className='account-balance-input right'
           value='0'
           type='text'

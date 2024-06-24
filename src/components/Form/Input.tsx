@@ -6,7 +6,6 @@ interface IProps {
   value?: string;
   tabIndex: number;
   required?: boolean;
-  autoFocus?: boolean;
   placeholder: string;
   autoComplete?: boolean;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -19,7 +18,6 @@ const Input = ({
   tabIndex,
   placeholder,
   required = false,
-  autoFocus = false,
   autoComplete = false,
   onChange,
 }: IProps): React.JSX.Element => (
@@ -30,7 +28,6 @@ const Input = ({
     value={value}
     tabIndex={tabIndex}
     required={required}
-    autoFocus={autoFocus}
     placeholder={placeholder}
     autoComplete={autoComplete ? 'on' : 'off'}
     onChange={onChange}

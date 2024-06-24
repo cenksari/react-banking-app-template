@@ -82,7 +82,7 @@ const Savings = (): React.JSX.Element => {
       <Divider />
 
       <div className='add-buttons flex flex-space-between'>
-        <Button type='submit' text='Continue' tabIndex={2} disabled={selected === ''} />
+        <Button type='submit' text='Continue' tabIndex={0} disabled={selected === ''} />
       </div>
 
       <Divider />
