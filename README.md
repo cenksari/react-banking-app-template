@@ -6,19 +6,19 @@ If you like this resource, please follow me on GitHub. Thank you!
 
 ## Screenshots
 
-![Signin](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/signin.png)
+![Signin](https://raw.githubusercontent.com/cenksari/react-banking-app-template/master/screenshots/signin.png)
 
-![Home](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/home.png)
+![Home](https://raw.githubusercontent.com/cenksari/react-banking-app-template/master/screenshots/home.png)
 
-![Transactions](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/transactions.png)
+![Transactions](https://raw.githubusercontent.com/cenksari/react-banking-app-template/public/screenshots/transactions.png)
 
-![Cards](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/cards.png)
+![Cards](https://raw.githubusercontent.com/cenksari/react-banking-app-template/master/screenshots/cards.png)
 
-![Add](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/addmoney.png)
+![Add](https://raw.githubusercontent.com/cenksari/react-banking-app-template/master/screenshots/addmoney.png)
 
-![Profile](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/profile.png)
+![Profile](https://raw.githubusercontent.com/cenksari/react-banking-app-template/master/screenshots/profile.png)
 
-![Savings](https://raw.githubusercontent.com/cenksari/banking-app/master/public/screenshots/savings.png)
+![Savings](https://raw.githubusercontent.com/cenksari/react-banking-app-template/master/screenshots/savings.png)
 
 ## Authors
 
