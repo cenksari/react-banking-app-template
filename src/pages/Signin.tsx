@@ -2,12 +2,18 @@ import React from 'react';
 
 import { Link, useNavigate } from 'react-router-dom';
 
+// components
 import Input from '../components/Form/Input';
 import Button from '../components/Form/Button';
 
 const Signin = (): React.JSX.Element => {
   const navigate = useNavigate();
 
+  /**
+   * Handles the form submission event by preventing the default behavior and navigating to the home page.
+   *
+   * @param {React.FormEvent} e - The form submission event.
+   */
   const handleSubmit = (e: React.FormEvent): void => {
     e.preventDefault();
 

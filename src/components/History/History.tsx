@@ -2,8 +2,10 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
+// components
 import HistoryLine from './HistoryLine';
 
+// interfaces
 interface Iprops {
   date?: string;
   detailed?: boolean;

@@ -1,5 +1,6 @@
 import React from 'react';
 
+// components
 import Layout from '../components/Layout/Layout';
 import History from '../components/History/History';
 import Divider from '../components/Divider/Divider';

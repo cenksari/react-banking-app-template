@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Routes, Route } from 'react-router-dom';
 
+// components
 import Add from '../pages/Add';
 import Home from '../pages/Home';
 import Cards from '../pages/Cards';

@@ -1,7 +1,9 @@
 import React from 'react';
 
+// components
 import Header from '../Header/Header';
 
+// interfaces
 interface IProps {
   children: React.ReactNode;
 }

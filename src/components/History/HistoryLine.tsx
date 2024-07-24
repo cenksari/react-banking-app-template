@@ -1,7 +1,9 @@
 import React from 'react';
 
+// components
 import Circle from '../Circle/Circle';
 
+// interfaces
 interface IData {
   id: number;
   icon: string;

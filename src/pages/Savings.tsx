@@ -1,5 +1,6 @@
 import React from 'react';
 
+// components
 import Button from '../components/Form/Button';
 import Layout from '../components/Layout/Layout';
 import Divider from '../components/Divider/Divider';
@@ -8,6 +9,11 @@ import Currency from '../components/Currency/Currency';
 const Savings = (): React.JSX.Element => {
   const [selected, setSelected] = React.useState<string>('');
 
+  /**
+   * Handles the selection of a currency symbol.
+   *
+   * @param {string} symbol - The symbol of the currency to be selected.
+   */
   const handleOnSelect = (symbol: string): void => {
     setSelected(symbol);
   };

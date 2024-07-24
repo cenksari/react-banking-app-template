@@ -1,5 +1,6 @@
 import React from 'react';
 
+// components
 import Layout from '../components/Layout/Layout';
 import Balance from '../components/Balance/Balance';
 import Actions from '../components/Actions/Actions';
