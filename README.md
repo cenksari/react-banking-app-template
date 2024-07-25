@@ -1,5 +1,20 @@
 # React Banking App Template
 
+Are you ready to revolutionize the world of online banking? This template is designed to help you create a modern, user-friendly, and visually stunning banking application using React. With its sleek design and cutting-edge technology, this template is the perfect starting point for your next project.
+
+**Key Features**
+
+* **Responsive Design**: A mobile-first approach ensures a seamless user experience across all devices.
+* **Modern UI**: A clean, intuitive interface that makes banking easy and enjoyable.
+* **Customizable**: Tailor the template to fit your brand's unique style and needs.
+* **Easy Integration**: Integrate with your existing banking systems or third-party services with ease.
+
+**Get Started**
+
+Whether you're a seasoned developer or just starting out, this template provides a solid foundation for your project. Follow the simple installation steps to get up and running quickly.
+
+## Support this project
+
 You are free to download, change and use it anywhere. I will regularly update this template with new resources and pages I found on the web. Don't hesitate to participate by sending a PR! Maybe your first on Github :)
 
 If you like this resource, please follow me on GitHub. Thank you!
