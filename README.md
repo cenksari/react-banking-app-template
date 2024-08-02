@@ -4,10 +4,10 @@ Are you ready to revolutionize the world of online banking? This template is des
 
 **Key Features**
 
-* **Responsive Design**: A mobile-first approach ensures a seamless user experience across all devices.
-* **Modern UI**: A clean, intuitive interface that makes banking easy and enjoyable.
-* **Customizable**: Tailor the template to fit your brand's unique style and needs.
-* **Easy Integration**: Integrate with your existing banking systems or third-party services with ease.
+- **Responsive Design**: A mobile-first approach ensures a seamless user experience across all devices.
+- **Modern UI**: A clean, intuitive interface that makes banking easy and enjoyable.
+- **Customizable**: Tailor the template to fit your brand's unique style and needs.
+- **Easy Integration**: Integrate with your existing banking systems or third-party services with ease.
 
 **Get Started**
 
