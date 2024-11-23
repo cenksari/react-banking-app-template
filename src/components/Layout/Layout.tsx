@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import Header from '../Header/Header';
 
@@ -8,7 +6,7 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const Layout = ({ children }: IProps): React.JSX.Element => (
+const Layout = ({ children }: IProps): JSX.Element => (
   <>
     <div className='bg' />
     <div className='content flex flex-col'>

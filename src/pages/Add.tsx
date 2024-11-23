@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import Saved from '../components/Add/Saved';
 import Arrow from '../components/Arrow/Arrow';
@@ -8,7 +6,7 @@ import Layout from '../components/Layout/Layout';
 import Divider from '../components/Divider/Divider';
 import Destination from '../components/Add/Destination';
 
-const Add = (): React.JSX.Element => (
+const Add = (): JSX.Element => (
   <Layout>
     <Divider />
 

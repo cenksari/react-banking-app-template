@@ -1,12 +1,10 @@
-import React from 'react';
-
 import { Link, useNavigate } from 'react-router-dom';
 
 // components
 import Input from '../components/Form/Input';
 import Button from '../components/Form/Button';
 
-const Signin = (): React.JSX.Element => {
+const Signin = (): JSX.Element => {
   const navigate = useNavigate();
 
   /**

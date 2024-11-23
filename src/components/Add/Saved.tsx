@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Saved = (): React.JSX.Element => (
+const Saved = (): JSX.Element => (
   <div className='accounts flex flex-v-center flex-space-between'>
     <div className='account-icon flex flex-1'>
       <div className='account-circle flex flex-h-center flex-v-center'>

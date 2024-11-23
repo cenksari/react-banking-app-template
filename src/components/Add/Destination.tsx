@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Destination = (): React.JSX.Element => (
+const Destination = (): JSX.Element => (
   <div className='accounts flex flex-v-center flex-space-between'>
     <div className='account-balance flex flex-col'>
       <div className='flex flex-v-center no-select pointer'>

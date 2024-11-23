@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import Layout from '../components/Layout/Layout';
 import Balance from '../components/Balance/Balance';
@@ -8,7 +6,7 @@ import History from '../components/History/History';
 import Widgets from '../components/Widgets/Widgets';
 import Divider from '../components/Divider/Divider';
 
-const Home = (): React.JSX.Element => (
+const Home = (): JSX.Element => (
   <Layout>
     <Balance balance={1325.5} currency='EURO' currencySymbol='€' />
 

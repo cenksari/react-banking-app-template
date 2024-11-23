@@ -1,5 +1,3 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   type: string;
@@ -8,7 +6,7 @@ interface IProps {
   disabled?: boolean;
 }
 
-const Button = ({ type, text, tabIndex, disabled = false }: IProps): React.JSX.Element => (
+const Button = ({ type, text, tabIndex, disabled = false }: IProps): JSX.Element => (
   <button
     tabIndex={tabIndex}
     type={type === 'submit' ? 'submit' : 'button'}

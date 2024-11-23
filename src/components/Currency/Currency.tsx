@@ -1,5 +1,3 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   aer: string;
@@ -17,8 +15,14 @@ const Currency = ({
   children,
   active = false,
   onSelect,
-}: IProps): React.JSX.Element => (
-  <div className='history-line flex flex-h-center flex-v-center pointer' onClick={onSelect}>
+}: IProps): JSX.Element => (
+  <div
+    tabIndex={0}
+    role='button'
+    onClick={onSelect}
+    onKeyDown={() => {}}
+    className='history-line flex flex-h-center flex-v-center pointer'
+  >
     <div className='history-line-icon flex flex-1'>
       <div className={`circle-icon flex flex-v-center flex-h-center ${active ? 'blue' : 'gray'}`}>
         {children}

@@ -1,5 +1,3 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   balance: number;
@@ -7,7 +5,7 @@ interface IProps {
   currencySymbol: string;
 }
 
-const Balance = ({ balance, currency, currencySymbol }: IProps): React.JSX.Element => (
+const Balance = ({ balance, currency, currencySymbol }: IProps): JSX.Element => (
   <div className='balance flex flex-col flex-v-center flex-h-center'>
     <p className='currency text-shadow no-select flex flex-v-center flex-h-center'>
       Main - {currency}

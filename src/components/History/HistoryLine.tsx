@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import Circle from '../Circle/Circle';
 
@@ -18,7 +16,7 @@ interface IProps {
   item: IData;
 }
 
-const HistoryLine = ({ item }: IProps): React.JSX.Element => (
+const HistoryLine = ({ item }: IProps): JSX.Element => (
   <div className='history-line flex flex-h-center flex-v-center'>
     <div className='history-line-icon flex flex-1'>
       <Circle color={item.color} icon={item.icon} />

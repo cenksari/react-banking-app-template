@@ -1,9 +1,9 @@
-import React from 'react';
+import { useRef } from 'react';
 
 import { Link } from 'react-router-dom';
 
-const Header = (): React.JSX.Element => {
-  const inputRef = React.useRef<HTMLInputElement>(null);
+const Header = (): JSX.Element => {
+  const inputRef = useRef<HTMLInputElement>(null);
 
   return (
     <header className='flex flex-v-center flex-space-between'>
@@ -15,10 +15,13 @@ const Header = (): React.JSX.Element => {
       <div className='header-center'>
         <div className='header-search flex flex-v-center'>
           <span
-            className='material-symbols-outlined no-select'
+            tabIndex={0}
+            role='button'
+            onKeyDown={() => {}}
             onClick={() => {
               inputRef.current?.focus();
             }}
+            className='material-symbols-outlined no-select'
           >
             search
           </span>

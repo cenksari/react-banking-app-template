@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Link } from 'react-router-dom';
 
 // components
@@ -16,7 +14,7 @@ const History = ({
   date = undefined,
   detailed = false,
   dateBalance = undefined,
-}: Iprops): React.JSX.Element => (
+}: Iprops): JSX.Element => (
   <>
     {detailed && (
       <div className='history-header flex flex-v-center flex-space-between'>

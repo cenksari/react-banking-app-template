@@ -1,8 +1,6 @@
-import React from 'react';
-
 import { Link } from 'react-router-dom';
 
-const Actions = (): React.JSX.Element => (
+const Actions = (): JSX.Element => (
   <div className='actions flex flex-v-center flex-h-center'>
     <div className='circle no-select flex flex-col flex-v-center flex-h-center'>
       <Link to='/add' className='flex flex-v-center flex-h-center'>

@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 // components
 import Button from '../components/Form/Button';
@@ -6,8 +6,8 @@ import Layout from '../components/Layout/Layout';
 import Divider from '../components/Divider/Divider';
 import Currency from '../components/Currency/Currency';
 
-const Savings = (): React.JSX.Element => {
-  const [selected, setSelected] = React.useState<string>('');
+const Savings = (): JSX.Element => {
+  const [selected, setSelected] = useState<string>('');
 
   /**
    * Handles the selection of a currency symbol.

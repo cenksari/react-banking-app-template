@@ -1,5 +1,3 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   number: string;
@@ -8,7 +6,7 @@ interface IProps {
   cardHolder: string;
 }
 
-const Card = ({ number, cvcNumber, validUntil, cardHolder }: IProps): React.JSX.Element => (
+const Card = ({ number, cvcNumber, validUntil, cardHolder }: IProps): JSX.Element => (
   <>
     <div className='card no-select'>
       <div className='card-inner'>

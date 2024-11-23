@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Routes, Route } from 'react-router-dom';
 
 // components
@@ -11,7 +9,7 @@ import Profile from '../pages/Profile';
 import Savings from '../pages/Savings';
 import Transactions from '../pages/Transactions';
 
-const Navigation = (): React.JSX.Element => (
+const Navigation = (): JSX.Element => (
   <Routes>
     <Route path='/' element={<Signin />} />
     <Route path='/add' element={<Add />} />
