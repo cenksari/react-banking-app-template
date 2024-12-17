@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Layout from '../components/Layout/Layout';
 import Divider from '../components/Divider/Divider';
 
-const Profile = (): JSX.Element => (
+const Profile: React.FC = () => (
   <Layout>
     <Divider />
 

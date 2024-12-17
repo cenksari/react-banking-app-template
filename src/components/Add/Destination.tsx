@@ -1,4 +1,4 @@
-const Destination = (): JSX.Element => (
+const Destination: React.FC = () => (
   <div className='accounts flex flex-v-center flex-space-between'>
     <div className='account-balance flex flex-col'>
       <div className='flex flex-v-center no-select pointer'>

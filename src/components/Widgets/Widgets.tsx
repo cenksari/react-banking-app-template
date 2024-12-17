@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Widgets = (): JSX.Element => (
+const Widgets: React.FC = () => (
   <div className='widgets flex flex-v-center flex-space-between'>
     <Link to='/transactions' className='widget no-select flex flex-col flex-v-center flex-h-center'>
       <span className='material-symbols-outlined'>sync_alt</span>

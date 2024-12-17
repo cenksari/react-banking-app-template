@@ -9,7 +9,7 @@ import Profile from '../pages/Profile';
 import Savings from '../pages/Savings';
 import Transactions from '../pages/Transactions';
 
-const Navigation = (): JSX.Element => (
+const Navigation: React.FC = () => (
   <Routes>
     <Route path='/' element={<Signin />} />
     <Route path='/add' element={<Add />} />

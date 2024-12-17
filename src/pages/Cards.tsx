@@ -4,7 +4,7 @@ import Layout from '../components/Layout/Layout';
 import History from '../components/History/History';
 import Divider from '../components/Divider/Divider';
 
-const Transactions = (): JSX.Element => (
+const Transactions: React.FC = () => (
   <Layout>
     <Divider />
 

@@ -6,7 +6,7 @@ import Layout from '../components/Layout/Layout';
 import Divider from '../components/Divider/Divider';
 import Currency from '../components/Currency/Currency';
 
-const Savings = (): JSX.Element => {
+const Savings: React.FC = () => {
   const [selected, setSelected] = useState<string>('');
 
   /**

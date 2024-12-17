@@ -2,7 +2,7 @@ import { useRef } from 'react';
 
 import { Link } from 'react-router-dom';
 
-const Header = (): JSX.Element => {
+const Header: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (

@@ -10,7 +10,7 @@ interface IProps {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input = ({
+const Input: React.FC<IProps> = ({
   name,
   type,
   value,
@@ -19,7 +19,7 @@ const Input = ({
   required = false,
   autoComplete = false,
   onChange,
-}: IProps): JSX.Element => (
+}) => (
   <input
     id={name}
     name={name}

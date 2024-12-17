@@ -8,14 +8,14 @@ interface IProps {
   onSelect: () => void;
 }
 
-const Currency = ({
+const Currency: React.FC<IProps> = ({
   aer,
   name,
   shortName,
   children,
   active = false,
   onSelect,
-}: IProps): JSX.Element => (
+}) => (
   <div
     tabIndex={0}
     role='button'

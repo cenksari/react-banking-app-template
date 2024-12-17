@@ -16,7 +16,7 @@ interface IProps {
   item: IData;
 }
 
-const HistoryLine = ({ item }: IProps): JSX.Element => (
+const HistoryLine: React.FC<IProps> = ({ item }) => (
   <div className='history-line flex flex-h-center flex-v-center'>
     <div className='history-line-icon flex flex-1'>
       <Circle color={item.color} icon={item.icon} />

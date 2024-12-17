@@ -5,7 +5,7 @@ interface IProps {
   currencySymbol: string;
 }
 
-const Balance = ({ balance, currency, currencySymbol }: IProps): JSX.Element => (
+const Balance: React.FC<IProps> = ({ balance, currency, currencySymbol }) => (
   <div className='balance flex flex-col flex-v-center flex-h-center'>
     <p className='currency text-shadow no-select flex flex-v-center flex-h-center'>
       Main - {currency}

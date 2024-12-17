@@ -6,7 +6,7 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const Layout = ({ children }: IProps): JSX.Element => (
+const Layout: React.FC<IProps> = ({ children }) => (
   <>
     <div className='bg' />
     <div className='content flex flex-col'>

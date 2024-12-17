@@ -6,7 +6,7 @@ interface IProps {
   cardHolder: string;
 }
 
-const Card = ({ number, cvcNumber, validUntil, cardHolder }: IProps): JSX.Element => (
+const Card: React.FC<IProps> = ({ number, cvcNumber, validUntil, cardHolder }) => (
   <>
     <div className='card no-select'>
       <div className='card-inner'>

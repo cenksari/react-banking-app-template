@@ -1,4 +1,4 @@
-const Saved = (): JSX.Element => (
+const Saved: React.FC = () => (
   <div className='accounts flex flex-v-center flex-space-between'>
     <div className='account-icon flex flex-1'>
       <div className='account-circle flex flex-h-center flex-v-center'>

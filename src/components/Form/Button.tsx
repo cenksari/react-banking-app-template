@@ -6,7 +6,7 @@ interface IProps {
   disabled?: boolean;
 }
 
-const Button = ({ type, text, tabIndex, disabled = false }: IProps): JSX.Element => (
+const Button: React.FC<IProps> = ({ type, text, tabIndex, disabled = false }) => (
   <button
     tabIndex={tabIndex}
     type={type === 'submit' ? 'submit' : 'button'}

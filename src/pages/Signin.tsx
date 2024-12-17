@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Input from '../components/Form/Input';
 import Button from '../components/Form/Button';
 
-const Signin = (): JSX.Element => {
+const Signin: React.FC = () => {
   const navigate = useNavigate();
 
   /**

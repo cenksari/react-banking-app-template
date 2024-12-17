@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 import HistoryLine from './HistoryLine';
 
 // interfaces
-interface Iprops {
+interface IProps {
   date?: string;
   detailed?: boolean;
   dateBalance?: string;
 }
 
-const History = ({
+const History: React.FC<IProps> = ({
   date = undefined,
   detailed = false,
   dateBalance = undefined,
-}: Iprops): JSX.Element => (
+}) => (
   <>
     {detailed && (
       <div className='history-header flex flex-v-center flex-space-between'>

@@ -6,7 +6,7 @@ import Layout from '../components/Layout/Layout';
 import Divider from '../components/Divider/Divider';
 import Destination from '../components/Add/Destination';
 
-const Add = (): JSX.Element => (
+const Add: React.FC = () => (
   <Layout>
     <Divider />
 
