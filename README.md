@@ -29,7 +29,7 @@ If you like this resource, please follow me on GitHub. Thank you!
 
 ![Home](https://raw.githubusercontent.com/cenksari/react-banking-app-template/master/screenshots/home.png)
 
-![Transactions](https://raw.githubusercontent.com/cenksari/react-banking-app-template/public/screenshots/transactions.png)
+![Transactions](https://raw.githubusercontent.com/cenksari/react-banking-app-template/master/screenshots/transactions.png)
 
 ![Cards](https://raw.githubusercontent.com/cenksari/react-banking-app-template/master/screenshots/cards.png)
 
